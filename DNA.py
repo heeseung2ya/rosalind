@@ -1,4 +1,4 @@
-data = './rosalind_dna_7_dataset.txt'
+data = 'rosalind_dna.txt'
 
 base = ['A', 'C', 'G', 'T']
 base_cnt = [0, 0, 0, 0]
