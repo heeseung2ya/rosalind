@@ -20,6 +20,6 @@ for line in lines:
         else:
             print("{} -> {}".format(line[i : i + 3], d_codon[line[i : i + 3]]))
             protein += d_codon[line[i : i + 3]]
-db.close()
+open(dataset, "r").close()
 print(protein)
 
