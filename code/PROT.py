@@ -23,3 +23,5 @@ for line in lines:
 open(dataset, "r").close()
 print(protein)
 
+# dataset이 항상 "AUG"부터 시작한다는 보장이 없으니, 첫 번째 "AUG"가 등장하면 그 때부터 string 변수 protein에 amino acid를 저장하기 시작하는 기능도 추가하고 싶었는데 일단 졸려서 포기... 다음에 추가하는 걸로...ㅎㅎ
+
