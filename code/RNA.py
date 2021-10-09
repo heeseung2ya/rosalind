@@ -1,5 +1,9 @@
-data = 'rosalind_rna.txt'
+filename = "../rosalind_rna.txt"
+fr = open(filename, "r")
 
-with open(data, 'r') as db:
-    for line in db.readlines():
-        print(line.replace('T', 'U'))
+rseq = ""
+for line in fr:
+    line = line.strip()
+    rseq += line.replace("T", "U")
+
+print(rseq)
