@@ -1,11 +1,10 @@
-data = 'rosalind_dna.txt'
+filename = "../rosalind_dna.txt"
+fr = open(filename, "r")
+for line in fr:
+    line = line.strip()
+    cnt_A = line.count("A")
+    cnt_C = line.count("C")
+    cnt_G = line.count("G")
+    cnt_T = line.count("T")
 
-base = ['A', 'C', 'G', 'T']
-base_cnt = [0, 0, 0, 0]
-
-with open(data, 'r') as db:
-    for line in db.readlines():
-        for b in base:
-            base_cnt[base.index(b)] += line.count(b)
-for i in base_cnt:
-    print(i, end=' ')
+print(cnt_A, cnt_C, cnt_G, cnt_T)
